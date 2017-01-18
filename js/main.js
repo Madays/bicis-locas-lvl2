@@ -132,7 +132,7 @@ function validateForm(evt){
         var padreContrasena = document.getElementById("divContrasena");
         padreContrasena.appendChild(elementoContrasena); 
     }
-    if(contrasena=="passware"||contrasena=="123456"||contrasena=="098754"){
+    if(contrasena=="password"||contrasena=="123456"||contrasena=="098754"){
         var elementoContrasena = document.createElement("span");
         var contenidoElementoContrasena = document.createTextNode("La contraseña debe contener caracteres, mayusculas, números");
         elementoContrasena.appendChild(contenidoElementoContrasena);    

@@ -139,7 +139,7 @@ function validateForm(evt){
         var padreContrasena = document.getElementById("divContrasena");
         padreContrasena.appendChild(elementoContrasena);
     }
-    /*-------------Seleccionar un tipo de bicicleta-------------*/
+    /*---------Seleccionar un tipo de bicicleta----------*/
     if(bicicleta=="0"){
         var elementoBicicleta= document.createElement("span");
         var contenidoElementoBicicleta = document.createTextNode("Seleccione un tipo de bicicleta");

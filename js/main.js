@@ -18,7 +18,12 @@
             primerCaracMayusculaN();
             quitarSpan("name");
         }else{
-           alert("Solo se acepta caracteres de A-Z");  
+           //alert("Solo se acepta caracteres de A-Z");  
+            var elemento = document.createElement("span");
+        var contenidoElemento = document.createTextNode("Sólo acepta caracteres de la A-Z");
+        elemento.appendChild(contenidoElemento);    
+        var padre = document.getElementById("divName");
+        padre.appendChild(elemento); 
         }        
     }
     /*-------------------Apellido-------------------*/
@@ -42,7 +47,12 @@
             primerCaracMayusculaS();   
             quitarSpan("lastname");
         }else{
-           alert("Solo se acepta caracteres de A-Z");  
+           //alert("Solo se acepta caracteres de A-Z");  
+            var elementoS = document.createElement("span");
+        var contenidoElementoS = document.createTextNode("Sólo acepta caracteres de la A-Z");
+        elementoS.appendChild(contenidoElementoS);    
+        var padreS = document.getElementById("lastname");
+        padreS.appendChild(elementoS); 
         }        
     }
     /*---------------End----Apellido-------------------*/
@@ -95,7 +105,7 @@ function validateForm(evt){
         var padreApellido = document.getElementById("divLastName");
         padreApellido.appendChild(elementoApellido);  
     }  
-    if(apellidos.length>80){
+    if(apellidos.length>70){
         alert("El apellido es muy largo");
         return false;
     }
@@ -139,7 +149,7 @@ function validateForm(evt){
         var padreContrasena = document.getElementById("divContrasena");
         padreContrasena.appendChild(elementoContrasena);
     }
-    /*-------------Seleccionar un tipo de bicicleta-------------*/
+    /*-----Seleccionar un tipo de bicicleta---------*/
     if(bicicleta=="0"){
         var elementoBicicleta= document.createElement("span");
         var contenidoElementoBicicleta = document.createTextNode("Seleccione un tipo de bicicleta");
